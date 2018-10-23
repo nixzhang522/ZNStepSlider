@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import ZNStepSlider
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var slider: ZNStepSlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        slider.scales = [0, 0.1, 0.5, 0.9]
+        slider.value = 0.33
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

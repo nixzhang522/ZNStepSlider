@@ -31,7 +31,7 @@
 		00F75032AA0708E75C5D516E /* Pods-ZNStepSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNStepSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZNStepSlider_Example/Pods-ZNStepSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F8586DF56E17D07D021B1B4 /* Pods_ZNStepSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZNStepSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		530BF75B2D026C57945D2696 /* Pods-ZNStepSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNStepSlider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZNStepSlider_Tests/Pods-ZNStepSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B76AD82EDAC2E8AA146E766 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5B76AD82EDAC2E8AA146E766 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZNStepSlider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZNStepSlider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +42,9 @@
 		607FACE51AFB9204008FA782 /* ZNStepSlider_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZNStepSlider_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6B8AC63A387BBB953467932A /* ZNStepSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZNStepSlider.podspec; path = ../ZNStepSlider.podspec; sourceTree = "<group>"; };
+		6B8AC63A387BBB953467932A /* ZNStepSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZNStepSlider.podspec; path = ../ZNStepSlider.podspec; sourceTree = "<group>"; };
 		7082892FAF849EF0A4E018E7 /* Pods-ZNStepSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNStepSlider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZNStepSlider_Example/Pods-ZNStepSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		977B7ED12B48D8700A1940FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		977B7ED12B48D8700A1940FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BE514E73113BEE2D1A9F06C4 /* Pods-ZNStepSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNStepSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZNStepSlider_Tests/Pods-ZNStepSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C1956AD67D9FA6C4168F0F0E /* Pods_ZNStepSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZNStepSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -266,15 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZNStepSlider_Example-checkManifestLockResult.txt",
 			);
@@ -288,15 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZNStepSlider_Tests-checkManifestLockResult.txt",
 			);
@@ -310,15 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZNStepSlider_Example/Pods-ZNStepSlider_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZNStepSlider/ZNStepSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZNStepSlider.framework",
 			);

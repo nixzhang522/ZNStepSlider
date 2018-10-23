@@ -1,0 +1,6 @@
+framework module ZNStepSlider {
+  umbrella header "ZNStepSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}
