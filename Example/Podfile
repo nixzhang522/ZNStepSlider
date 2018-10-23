@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZNStepSlider_Example' do
+  pod 'ZNStepSlider', :path => '../'
+
+  target 'ZNStepSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
