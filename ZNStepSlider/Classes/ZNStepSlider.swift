@@ -44,7 +44,7 @@ public class ZNStepSlider: UIControl {
     }
     
     /// scale noraml color
-    @IBInspectable public var scaleNormalColor: UIColor = UIColor.red
+    @IBInspectable public var scaleNormalColor: UIColor = UIColor.gray
     
     /// scale selected color
     @IBInspectable public var scaleSelectedColor: UIColor = UIColor.green
@@ -65,7 +65,7 @@ public class ZNStepSlider: UIControl {
     }
     
     /// track color
-    @IBInspectable public var trackColor: UIColor = UIColor.gray
+    @IBInspectable public var trackColor: UIColor = UIColor.lightGray
     
     /// slider radius
     @IBInspectable public var sliderCircleRadius: CGFloat = 5.0 {
@@ -75,13 +75,13 @@ public class ZNStepSlider: UIControl {
     }
 
     /// slider color
-    @IBInspectable public var sliderCircleColor: UIColor = UIColor.gray
+    @IBInspectable public var sliderCircleColor: UIColor = UIColor.red
 
     /// slider image
     @IBInspectable public var sliderCircleImage: UIImage?
     
-    /// Whether to rest on the nearest scale after sliding, default true
-    @IBInspectable public var isSliderScale = true
+    /// Whether to rest on the nearest scale after sliding, default false
+    @IBInspectable public var isSliderScale = false
     
     var trackLayer: CAShapeLayer = CAShapeLayer.init()
     
@@ -161,9 +161,13 @@ public class ZNStepSlider: UIControl {
     }
     
     func updateIndex() {
+        guard self.scales.count > 0 else {
+            isSliderScale = false
+            return
+        }
         if index > self.scales.count - 1 {
             index = self.scales.count - 1
-            value = self.scales[index]
+            value = scales[index]
             self.sendActions(for: .valueChanged)
         }
     }

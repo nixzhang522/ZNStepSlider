@@ -1,9 +1,9 @@
 {
   "name": "ZNStepSlider",
-  "version": "0.1.0",
-  "summary": "A short description of ZNStepSlider.",
+  "version": "0.0.1",
+  "summary": "ZNStepSlider.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Nix/ZNStepSlider",
+  "homepage": "https://github.com/NixZhang5/ZNStepSlider.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "Nix": "351235445@qq.com"
   },
   "source": {
-    "git": "https://github.com/Nix/ZNStepSlider.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/NixZhang5/ZNStepSlider.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"

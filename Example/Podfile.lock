@@ -1,5 +1,5 @@
 PODS:
-  - ZNStepSlider (0.1.0)
+  - ZNStepSlider (0.0.1)
 
 DEPENDENCIES:
   - ZNStepSlider (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZNStepSlider: 4ae84aae32dd21dc0b5a44fdd889fe9083ee55f1
+  ZNStepSlider: 95011c2856336d46a6afe2c623f481ef61ff4f5b
 
-PODFILE CHECKSUM: e427cdd7606f9a8a519fe3e8256a5700f1313388
+PODFILE CHECKSUM: 6487cdf08dafcc9929fbb387acd323a681d1525b
 
 COCOAPODS: 1.5.3

@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		027AE983EA0FD2012BDD37BA87DA3BD8 /* ZNStepSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ZNStepSlider.podspec; sourceTree = "<group>"; };
+		027AE983EA0FD2012BDD37BA87DA3BD8 /* ZNStepSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ZNStepSlider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		056928F69D9531FBD419467445B9A9E5 /* Pods-ZNStepSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZNStepSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1AAF5085A1F87D0BA33CCD5A92762C58 /* ZNStepSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZNStepSlider-dummy.m"; sourceTree = "<group>"; };
 		1F9BEB124A7249A7FFF67BBBF4672035 /* Pods-ZNStepSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZNStepSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -48,30 +48,30 @@
 		4799D870639DB66C3E2819A5A99BA3B7 /* Pods-ZNStepSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZNStepSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
 		48B5CDA7354E257DBCA8D997288F1A69 /* ZNStepSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZNStepSlider-prefix.pch"; sourceTree = "<group>"; };
 		4D8DB934ECF28F0022A5F4A868C7D397 /* Pods-ZNStepSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZNStepSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4D9594084847ED049DF2BE5899EC16AA /* ZNStepSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZNStepSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51BE1D4A5BEE193D4587C5B281CDB4CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D9594084847ED049DF2BE5899EC16AA /* ZNStepSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZNStepSlider.framework; path = ZNStepSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BE1D4A5BEE193D4587C5B281CDB4CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66FCE8BE83AFF226A067E1BC68991FE5 /* Pods-ZNStepSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZNStepSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF72EE336D873FEB5F422013B6B7215 /* Pods-ZNStepSlider_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZNStepSlider_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		80547FFE2255A10B340F15C7DB246715 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812B715FB1A0400664DF4D5EACC93AAF /* Pods-ZNStepSlider_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZNStepSlider_Tests-resources.sh"; sourceTree = "<group>"; };
 		85F73A1C2C930120FC2520F47EC7FDB7 /* Pods-ZNStepSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZNStepSlider_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D1F5CC9F1F188B457AF8C90C157B040 /* Pods-ZNStepSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZNStepSlider_Example.modulemap"; sourceTree = "<group>"; };
 		A1DEC18A4012B50A72481026D28CD66A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD962DABE7CFC86672F065135BA1117E /* ZNStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZNStepSlider.swift; path = ZNStepSlider/Classes/ZNStepSlider.swift; sourceTree = "<group>"; };
 		C0D1ECC1D97EE174E7A9E8B0C542379F /* Pods-ZNStepSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZNStepSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C74A36AFA1EEBB9F914AA56BBB021645 /* Pods-ZNStepSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZNStepSlider_Example-dummy.m"; sourceTree = "<group>"; };
 		CC43BAB6E1A45EA88F0A43098C980718 /* Pods-ZNStepSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZNStepSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF1C754C5932A7E9A72EC27292BA82B0 /* Pods_ZNStepSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZNStepSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1C754C5932A7E9A72EC27292BA82B0 /* Pods_ZNStepSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZNStepSlider_Tests.framework; path = "Pods-ZNStepSlider_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04195ADB77434B39AC185D42F96ECA5 /* ZNStepSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZNStepSlider.xcconfig; sourceTree = "<group>"; };
 		D05E085536A310DC3F3BDABDCFED9FFE /* Pods-ZNStepSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZNStepSlider_Example-umbrella.h"; sourceTree = "<group>"; };
 		D677B60FF4A249305CE42776B1E8AC29 /* Pods-ZNStepSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZNStepSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D76D1797F11D1F39F31D1FA6D21CCD7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D76D1797F11D1F39F31D1FA6D21CCD7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E173473941228B0EFF6FA0202BDE5479 /* Pods-ZNStepSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZNStepSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E6C65557B938C64AEDF74118F7BBF8A4 /* ZNStepSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZNStepSlider-umbrella.h"; sourceTree = "<group>"; };
 		EA840A766D3BC20B0208471E470E7AD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCE10EC19DC22CF51004D1A61C57ED10 /* Pods_ZNStepSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZNStepSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE10EC19DC22CF51004D1A61C57ED10 /* Pods_ZNStepSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZNStepSlider_Example.framework; path = "Pods-ZNStepSlider_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,7 +433,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -653,7 +654,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
