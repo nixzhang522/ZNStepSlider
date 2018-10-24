@@ -2,6 +2,9 @@
 
 ![image](https://github.com/NixZhang5/ZNStepSlider/blob/master/screenshots/slider-screenshots.gif)
 
+#### Language
+Swift
+
 #### 遇到的问题
 IBDesignable not works with the frameworks which links with CocoaPods' framework.
 Seems like it might be related to CocoaPods/CocoaPods#7606. For the time being I would downgrade CocoaPods and possibly Xcode or use the workaround
