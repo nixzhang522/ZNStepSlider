@@ -28,7 +28,12 @@ public class ZNStepSlider: UIControl {
         }
     }
     
-    @IBInspectable public var index: Int = 0
+    @IBInspectable public var index: Int = 0 {
+        didSet {
+            self.updateIndex()
+            self.sendActions(for: .valueChanged)
+        }
+    }
     
     /// scales must not be empty
     public var scales: [CGFloat] = [] {
@@ -45,22 +50,38 @@ public class ZNStepSlider: UIControl {
     @IBInspectable public var scaleSelectedColor: UIColor = UIColor.green
     
     /// scale radius
-    @IBInspectable public var scaleCircleRadius: CGFloat = 1.5
+    @IBInspectable public var scaleCircleRadius: CGFloat = 1.5 {
+        didSet {
+            self.updateDiff()
+            self.updateMaxRadius()
+        }
+    }
     
     /// track height
-    @IBInspectable public var trackHeight: CGFloat = 3.0
+    @IBInspectable public var trackHeight: CGFloat = 3.0 {
+        didSet {
+            self.updateDiff()
+        }
+    }
     
     /// track color
     @IBInspectable public var trackColor: UIColor = UIColor.gray
     
     /// slider radius
-    @IBInspectable public var sliderCircleRadius: CGFloat = 5.0
+    @IBInspectable public var sliderCircleRadius: CGFloat = 5.0 {
+        didSet {
+            self.updateMaxRadius()
+        }
+    }
 
     /// slider color
     @IBInspectable public var sliderCircleColor: UIColor = UIColor.gray
 
     /// slider image
     @IBInspectable public var sliderCircleImage: UIImage?
+    
+    /// Whether to rest on the nearest scale after sliding, default true
+    @IBInspectable public var isSliderScale = true
     
     var trackLayer: CAShapeLayer = CAShapeLayer.init()
     
@@ -135,13 +156,30 @@ public class ZNStepSlider: UIControl {
         self.updateMaxRadius()
     }
     
+    func updateDiff() {
+        diff = CGFloat(sqrtf(max(0, powf(Float(self.scaleCircleRadius), 2.0)) - powf(Float(self.trackHeight * 0.5), 2.0)))
+    }
+    
+    func updateIndex() {
+        if index > self.scales.count - 1 {
+            index = self.scales.count - 1
+            value = self.scales[index]
+            self.sendActions(for: .valueChanged)
+        }
+    }
+    
     func updateMaxRadius() {
         self.maxRadius = max(self.scaleCircleRadius, self.sliderCircleRadius);
     }
     
+    func sliderPosition() -> CGFloat {
+        return sliderCircleLayer.position.x - maxRadius
+    }
+    
     func layoutLayersAnimated(_ animated: Bool) {
-        let indexDiff = abs(self.indexCalculate() - self.index)
-        let left = self.indexCalculate() - self.index < 0
+        let calculateIndex = self.indexCalculate()
+        let indexDiff = abs(calculateIndex - self.index)
+        let left = calculateIndex - self.index < 0
         let contentWidth = self.bounds.width - 2 * maxRadius
         let sliderHeight = max(maxRadius, self.trackHeight / 2.0) * 2.0
         contentSize = CGSize(width: max(30.0, self.bounds.width), height: max(30.0, sliderHeight))
@@ -358,33 +396,16 @@ public class ZNStepSlider: UIControl {
         return (scaleCircleImages[key] != nil) ? scaleCircleImages[key] : scaleCircleImages[0]
     }
     
-    func updateDiff() {
-        diff = CGFloat(sqrtf(max(0, powf(Float(self.scaleCircleRadius), 2.0)) - powf(Float(self.trackHeight * 0.5), 2.0)))
-    }
-    
-    func updateIndex() {
-        if index > self.scales.count - 1 {
-            index = self.scales.count - 1
-            value = self.scales[index]
-            self.sendActions(for: .valueChanged)
-        }
-    }
-    
-    func sliderPosition() -> CGFloat {
-        return sliderCircleLayer.position.x - maxRadius
-    }
-    
     // MARK: - Touch
     override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-        isTouched = true
         
         startTouchPosition = touch.location(in: self)
         startSliderPosition = sliderCircleLayer.position
         
         if sliderCircleLayer.frame.contains(startTouchPosition!) {
+            isTouched = true
             return true
         }
-        isTouched = false
         return false
     }
     
@@ -406,7 +427,13 @@ public class ZNStepSlider: UIControl {
                 }
             }
             self.index = index
-            self.value = self.scales[self.index]
+            
+            if isSliderScale {
+                self.value = self.scales[self.index]
+            }
+            else {
+                value = (self.sliderCircleLayer.position.x - maxRadius) / (self.bounds.width - 2 * maxRadius)
+            }
             self.sendActions(for: .valueChanged)
         }
         
@@ -426,7 +453,12 @@ public class ZNStepSlider: UIControl {
         let newIndex = self.indexCalculate()
         if newIndex != index {
             index = newIndex
-            value = scales[index]
+            if isSliderScale {
+                value = scales[index]
+            }
+            else {
+                value = (self.sliderCircleLayer.position.x - maxRadius) / (self.bounds.width - 2 * maxRadius)
+            }
             self.sendActions(for: .valueChanged)
         }
         animationLayouts = true
