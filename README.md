@@ -20,6 +20,6 @@ end
 
 #### 使用
 ```
-_slider.scales = @[@0.1, @0.5];
+_slider.scales = @[0.1, 0.5];
 _slider.value = 0.15;
 ```
