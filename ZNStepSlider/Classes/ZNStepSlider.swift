@@ -330,7 +330,7 @@ public class ZNStepSlider: UIControl {
     
     func indexCalculate() -> Int {
         let position = self.sliderPosition()
-        let width = self.bounds.width
+        let width = self.bounds.width - maxRadius * 2
         var index = 0
         let count = self.scales.count
         for (i,item) in self.scales.enumerated() {
